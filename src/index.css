@@ -1,0 +1,108 @@
+svg{
+  width: 20px;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bisque: #ffe4c4;
+  --black: #000000;
+  --blue: #0062b2;
+  --blueViolet: #8a2be2;
+  --blueViolet-light: #dabdf7;
+  --braun: #92400e;
+  --braun-dark: #230901;
+  --green: #2b8c69;
+  --green-light: #1db954;
+  --grey: #f0f1f3;
+  --grey-dark: #8a8d91;
+  --grey-light: #7b7b7b;
+  --grey-light-super: #f3f4f6;
+  --orange: #ff9f1a;
+  --red: #ff0000;
+  --red-light: #f56161;
+  --red-dark: #ee0c4b;
+  --tomato: #ff6347;
+  --white: #fff;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--grey-light);
+}
+#root {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-chatbot-kit-chat-container{
+  margin: 0 auto;
+  width: 300px;
+  min-height: 450px;
+  background-color: var(--blueViolet-light);
+  padding: 16px;
+}
+.react-chatbot-kit-chat-header{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.react-chatbot-kit-user-chat-message-container{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+ 
+}
+.react-chatbot-kit-chat-bot-message{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+.react-chatbot-kit-chat-bot-avatar-letter,.react-chatbot-kit-user-avatar-container{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  background-color: var(--grey-dark);
+}
+.react-chatbot-kit-user-avatar-container{
+  background-color: var(--orange);
+}
+.dog{
+  width: 200px;
+  height: 200px;
+}
+.dog img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.react-chatbot-kit-chat-input-form{
+  display: flex;
+  align-items: center;
+  
+}
+input{
+ height:40px;
+ width: 250px;
+ font-size: 1rem;
+ padding: 0 8px;
+}
+.react-chatbot-kit-chat-btn-send{
+width: 40px;
+height: 40px;
+border: 1px solid var(--green);
+cursor: pointer;
+}
