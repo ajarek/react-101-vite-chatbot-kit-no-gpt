@@ -1,16 +1,17 @@
-// in MessageParser.jsx
-import React from 'react';
+import React from 'react'
 
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     if (message.includes('hello')) {
-      actions.handleHello();
+      actions.handleHello()
     }
 
     if (message.includes('dog')) {
-      actions.handleDog();
+      actions.handleDog()
+    } else {
+      actions.handleAny()
     }
-  };
+  }
 
   return (
     <div>
@@ -18,10 +19,10 @@ const MessageParser = ({ children, actions }) => {
         return React.cloneElement(child, {
           parse: parse,
           actions,
-        });
+        })
       })}
     </div>
-  );
-};
+  )
+}
 
-export default MessageParser;
+export default MessageParser

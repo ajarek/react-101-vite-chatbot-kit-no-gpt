@@ -1,7 +1,6 @@
-// in config.js
-import { createChatBotMessage } from 'react-chatbot-kit';
+import { createChatBotMessage } from 'react-chatbot-kit'
 
-const botName = 'Lawina';
+const botName = 'Bot'
 
 import DogPicture from '../components/DogPicture'
 
@@ -16,12 +15,11 @@ const config = {
   customStyles: {
     botMessageBox: {
       backgroundColor: '#05d69e',
-      
     },
     chatButton: {
       backgroundColor: '#5ccc9d',
     },
   },
-};
+}
 
-export default config;
+export default config
